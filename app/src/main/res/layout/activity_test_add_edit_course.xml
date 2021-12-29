@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+
+        tools:context=".testAddEditCourse">
+
+
+        <CheckBox
+            android:id="@+id/course_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alarm"/>
+
+
+
+        <EditText
+            android:id="@+id/edit_course_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="COURSE"
+            android:inputType="text"
+
+            android:autofillHints="COURSE" />
+
+        <EditText
+            android:id="@+id/course_start_date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="START DATE"
+            android:inputType="text"
+
+
+            />
+
+        <EditText
+            android:id="@+id/course_end_date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="END DATE"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course Status"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+        <RadioGroup
+            android:id="@+id/course_status_choices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/in_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In Progress"/>
+
+
+            <RadioButton
+                android:id="@+id/completed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Completed"/>
+
+            <RadioButton
+                android:id="@+id/planned"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Planned"/>
+
+            <RadioButton
+                android:id="@+id/dropped"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dropped"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="Instructor Information"/>
+        <EditText
+            android:id="@+id/course_instructor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="INSTRUCTOR"
+            />
+
+        <EditText
+            android:id="@+id/course_instructor_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="INSTRUCTOR PHONE"
+            />
+
+        <EditText
+            android:id="@+id/course_instructor_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="INSTRUCTOR EMAIL"
+            />
+
+
+        <Button
+            android:id="@+id/buttontosavecourse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="AddAssessmentInfo"
+            android:text="Course Assessment" />
+
+        <Button
+            android:id="@+id/buttontoAddNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="AddNotetoCourse"
+            android:text="Course Note" />
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+
+
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+
+    tools:context=".addEDITTermActivity">
+
+
+    <EditText
+        android:id="@+id/textViewTermID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:editable="false"
+        android:inputType="text"
+
+        />
+    <EditText
+        android:id="@+id/edit_text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="TERM"
+        android:inputType="text"
+
+        />
+
+    <EditText
+        android:id="@+id/start_date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="START DATE"
+        android:inputType="date"
+
+
+        />
+
+    <EditText
+        android:id="@+id/end_date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:hint="END DATE"
+        />
+
+    <Button
+        android:id="@+id/button_goToCourses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:onClick="goToCourses"
+        android:text="Go To Courses" />
+
+
+</LinearLayout>
+
